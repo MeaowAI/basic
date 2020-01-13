@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <form action="">
+    <table align="center" width="80%">
+        <tr><td><label for="NameTitle">คำนำหน้า</label></td><td><select name="NameTitle">
+                <option value="นาย">นาย</option>
+                <option value="นาง">นาง</option>
+                <option value="นางสาว">นางสาว</option>
+        </select></td>
+        </tr>
+    <tr>
+      <td><label for="name">ชื่อ</label></td>
+      <td><input type="text" name="name" maxlength="20" value=""></td>
+    </tr>
+    <tr>
+      <td><label for="lastname">นามสกุล</label></td>
+      <td><input type="text" name="lastname" maxlength="30" value=""></td>
+    </tr>
+        <tr>
+      <td><label for="id">สมาชิกเลขที</label>่</td>
+      <td><input type="text" name="id" maxlength="13" value=""></td>
+    </tr>
+    <tr>
+      <td><label for="tel">เบอร์โทร</label></td>
+      <td><input type="text" name="tel" maxlength="10"  value=""></td>
+    </tr>
+        <tr>
+      <td><label for="fill">เป็นครู/บุลลากร</label></td>
+      <td><select name="fill">
+                <option value="บรรจุ">บรรจุ</option>
+                <option value="ไม่บรรจุ">ไม่บรรจุ</option>
+        </select></td>
+    </tr>
+        <tr>
+      <td><label for="Eme_benefits">สวัสดิการฉุกเฉิน</label></td>
+      <td><select name="Eme_benefits">
+                <option value="3000">จำนวน 3000 บาท (สามพันบาทถ้วน)</option>
+                <option value="6000">จำนวน 6000 บาท (หกพันบาทถ้วน</option>
+        </select></td>
+    </tr>
+        <tr>
+      <td><label for="share">เพื่อใช้จ่าย</label></td>
+      <td><input type="text" name="share" maxlength="20" value=""></td>
+    </tr>
+        <tr>
+      <td><label>กำหนดชำระคืนภายใน 3 งวดนี้</label></td>
+    </tr>
+        <tr><td><label for="invest1">งวดที่ 1 สิ้นเดือน</label></td><td><input type="date" name="invest1" value=""></td></tr>
+        <tr><td><label for="invest2">งวดที่ 2 สิ้นเดือน</label></td><td><input type="date" name="invest2" value=""></td></tr>
+        <tr><td><label for="invest3">งวดที่ 3 สิ้นเดือน</label></td><td><input type="date" name="invest3" value=""></td></tr>
+    <tr>
+      <td align="right"><input type="submit" name="submit" value="สมัคร"></td>
+      <td align="left"><input type="button"  value="ยกเลิก"></td>
+      <input type="hidden" name="id" value="">
+    </tr>
+    </table>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <form action="">
+    <table align="center" width="80%">
+        <tr><td><label for="Nametitle">คำนำหน้า</label></td><td><select name="NameTitle">
+                <option value="นาย">นาย</option>
+                <option value="นาง">นาง</option>
+                <option value="นางสาว">นางสาว</option>
+        </select></td>
+        </tr>
+    <tr>
+      <td><label for="name">ชื่อ</label></td>
+      <td><input type="text" name="name" maxlength="20" value=""></td>
+    </tr>
+    <tr>
+      <td><label for="lastname">นามสกุล</label></td>
+      <td><input type="text" name="lastname" maxlength="30" value=""></td>
+    </tr>
+        <tr>
+      <td><label for="id">สมาชิกเลขที</label>่</td>
+      <td><input type="text" name="id" maxlength="13" value=""></td>
+    </tr>
+    <tr>
+      <td><label for="fill">เป็นครู/บุลลากร</label></td>
+      <td><select name="fill">
+                <option value="บรรจุ">บรรจุ</option>
+                <option value="ไม่บรรจุ">ไม่บรรจุ</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td><label for="want">มีความประสงค์ขอรับเงินสวัสดิการ</label></td>
+      <td><select name="want">
+                <option value="ฉุกเฉิน">ฉุกเฉิน</option>
+                <option value="สามัญุ">สามัญ</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+
+    </tr>
+  </table>
+
+  </form>
+
+
+</div>
+
+{% endblock %}

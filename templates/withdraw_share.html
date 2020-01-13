@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div class="jumbotron">
+    <form action="">
+      <table align="center" width="80%">
+          <tr><td><label for="Nametitle">คำนำหน้า</label></td><td><select name="NameTitle">
+                  <option value="นาย">นาย</option>
+                  <option value="นาง">นาง</option>
+                  <option value="นางสาว">นางสาว</option>
+          </select></td>
+          </tr>
+      <tr>
+        <td><label for="name">ชื่อ</label></td>
+        <td><input type="text" name="name" maxlength="20" value=""></td>
+      </tr>
+      <tr>
+        <td><label for="lastname">นามสกุล</label></td>
+        <td><input type="text" name="lastname" maxlength="30" value=""></td>
+      </tr>
+          <tr>
+        <td><label for="id">สมาชิกเลขที่</label>่</td>
+        <td><input type="text" name="id" maxlength="13" value=""></td>
+      </tr>
+      <tr>
+        <td><label for="withdraw">ขอลาหุ้น/ถอนหุ้น จำนวน</label></td>
+        <td><input type="text" name="withdraw" value="">หุ้น</td>
+      </tr>
+      <tr>
+        <td><label for="fund">เงินลงทุน</label></td>
+        <td><input type="text" name="fund" value="">บาท</td>
+      </tr>
+      <tr>
+        <td><label for="balance_share">หุ้นคงเหลือ</label></td>
+        <td><input type="text" name="balance_share" value="">หุ้น</td>
+      </tr>
+      <tr>
+        <td><label for="balance_fund">เงินลงทุนคงเหลือ</label></td>
+        <td><input type="text" name="balance_fund" value="">บาท</td>
+      </tr>
+    </table>
+
+    </form>
+
+
+  </div>
+
+
+{% endblock %}

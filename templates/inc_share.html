@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <form action="">
+    <table align="center" width="80%">
+      <tr>
+        <td><label for="NameTitle">คำนำหน้า</label></td>
+        <td><select name="NameTitle"> <!-- ชื่อตนเอง-->
+              <option value="นาย">นาย</option>
+              <option value="นาง">นาง</option>
+              <option value="นางสาว">นางสาว</option>
+              </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="name">ชื่อ</label></td>
+        <td><input type="text" name="name" maxlength="20" value=""></td>
+      </tr>
+      <tr>
+        <td><label for="lastname">นามสกุล</label></td>
+        <td><input type="text" name="lastname" maxlength="30" value=""></td>
+      </tr>
+          <tr>
+        <td><label for="id">เลขบัตรประจำตัวประชาชน</label></td>
+        <td><input type="text" name="id" maxlength="13" value=""></td>
+      </tr>
+      <tr>
+        <td><label for="address">ที่อยู</label>่</td>
+        <td><input type="textarea" name="address" maxlength="150" value=""></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="tel">เบอร์โทร</label></td>
+        <td><input type="text" name="tel" maxlength="10"  value=""></td>
+      </tr>
+      <tr>
+        <td><label for="inc">ขอเพิ่มหุ้นกลุ่มสวัสดิการครู จำนวน</label></td>
+        <td><input type="text" name="inc" maxlength="10"  value="">หุ้น</td>
+      </tr>
+      <tr>
+        <td><label for="fund">เงินลงทุน</label></td>
+        <td><input type="text" name="fund" maxlength="10"  value="">หบาท</td>
+      </tr>
+      <tr>
+        <td><label for="incTotal">หุ้นทั้งหมด</label></td>
+        <td><input type="text" name="incTotal" maxlength="10"  value="">หุ้น</td>
+      </tr>
+      <tr>
+        <td><label for="fundTotal">เงินลงทุนหุ้นทั้งหมด</label></td>
+        <td><input type="text" name="fundTotal" maxlength="10"  value="">บาท</td>
+      </tr>
+    </table>
+            <input type="submit" name="submit" value="ส่ง">
+  </form>
+
+</div>
+
+{% endblock %}
